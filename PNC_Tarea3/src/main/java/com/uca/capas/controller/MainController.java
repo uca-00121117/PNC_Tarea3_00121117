@@ -87,7 +87,7 @@ public class MainController
 		ModelAndView resultado = new ModelAndView();
 		
 		if(!errores.isEmpty()) {
-			resultado.addObject("errors", errores);
+			resultado.addObject("errores", errores);
 			resultado.setViewName("resultado_fracaso");
 		}else {
 			resultado.setViewName("resultado_exito");
