@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>00121117</title>
+</head>
+<body>
+	<h1>Formulario de ingreso de Alumnos</h1>
+	<form method="post" th:action="@{/validar}">
+		<table >
+			<tr>
+				<th>Nombres: <input type="text" name="nombre"></th> 
+				<th>Apellidos: <input type="text"name="apellido"></th>
+			</tr>
+			<tr>
+				<th><label>Fecha de nacimiento: <input type="date" name="fechan"></label><br></th>
+				<th><label>Lugar de nacimiento: <input type="text"  name="lugarn"></label><br></th>
+			</tr>
+			<tr>	
+				<th><label>Instituto o  Colegio de procedencia: <input type="text"  name="colegio"></label></th>
+			</tr>
+			<tr>
+				<th>		<label>Teléfono fijo: <input type="text" name="telefono"></label><br></th>
+				<th>		<label>Teléfono móvil: <input type="text" name="celular"></label><br></th>
+			</tr>
+		</table>
+			
+		<input type="submit" value="Guardar alumno">
+	
+	</form>
+</body>
+</html>

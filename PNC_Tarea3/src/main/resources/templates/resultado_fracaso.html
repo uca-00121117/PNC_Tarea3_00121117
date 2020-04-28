@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fracaso</title>
+</head>
+<body>
+<h1>Fallo al ingresar alumno</h1>
+	<table >
+		<tr th:each="e: ${errors}">
+			<td th:text="${e}"/>
+		</tr>
+	</table>
+</body>
+</html>
